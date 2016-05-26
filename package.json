@@ -4,7 +4,7 @@
   "description": "haastii",
   "private": true,
   "engines": {
-	  "node": "6.2.0"
+	  "node": "6.1.0"
   },
   "scripts": {
     "start": "node app.js"
