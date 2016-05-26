@@ -1,0 +1,27 @@
+﻿extends layout
+
+include ./mixins/masthead.jade
+include ./mixins/mastfoot.jade
+include ./mixins/orderform.jade
+
+
+block content
+  +masthead(title, time < 0, 'index')
+  div.site-wrapper
+    div.site-wrapper-inner
+      div.cover-container
+        div.inner.cover
+          - if (time > 60 * 1000)
+            - var minutes = time / (60 * 1000);
+            - var minutesRound = Math.round(minutes * 100) / 100;
+
+            +orderform(minutesRound, 'minutes')
+          - else if (time < 60 * 1000 && time > 0)
+            - var seconds = time / 1000;
+            - var secondsRound = Math.round(seconds * 100) / 100;
+
+            +orderform(secondsRound, 'seconds')
+  +mastfoot
+
+block scripts
+    script(src='/javascripts/order.js')

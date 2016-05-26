@@ -1,0 +1,17 @@
+[Unit]
+Description=Application for ordering takeout
+After=network.target
+
+[Service]
+ExecStart=/home/matt/Dropbox/projects/haastii/app.js
+Restart=always
+User=nobody
+Group=nobody
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+Environment=PORT=80
+WorkingDirectory=/home/matt/Dropbox/projects/haastii
+
+[Install]
+WantedBy=multi-user.target
+

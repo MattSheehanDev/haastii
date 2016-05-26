@@ -1,0 +1,15 @@
+﻿
+
+mixin orderform(rounded, units)
+  h1.cover-heading Taking orders for #{menu}.
+  p.lead Hurry up! Pickup is in #{rounded} #{units}.
+  form
+    div#place-name-group.form-group
+      input#place-name.form-control(type='text', placeholder='Name')
+    div#place-order-group.form-group
+      input#place-order.form-control(type='text', placeholder='Order')
+    div#place-special-group.form-group
+      textarea#place-special.form-control(placeholder='Special requests', style='resize:none')
+    p.lead
+      input#place-btn.btn.btn-lg.btn-default(type='submit', value='Submit')
+        

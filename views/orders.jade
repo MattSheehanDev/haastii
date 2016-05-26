@@ -1,0 +1,30 @@
+﻿extends layout
+
+include ./mixins/masthead.jade
+include ./mixins/mastfoot.jade
+
+
+block content
+  +masthead(title, true, 'orders')
+  div.site-wrapper
+    div.site-wrapper-inner
+      div.cover-container
+        div.inner.cover
+          -
+          ul.list-group
+            each order in orders
+              li.list-group-item
+                h4= order.name
+                p= order.order
+                i= order.special
+  +mastfoot
+  
+  style.
+    @media print {
+      .masthead { display: none; }
+      .mastfoot { display: none; }
+      
+      .list-group { text-align: left; }
+      .list-group-item { padding: 2px 0; }
+      h4, p, i { margin: 0; }
+    }

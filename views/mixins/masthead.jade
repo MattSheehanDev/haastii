@@ -1,0 +1,20 @@
+﻿
+mixin masthead(name, showNav, active)
+  div.masthead.clearfix
+    -
+    if (active == 'index')
+      h3.masthead-brand.active: a(href='/')= name
+    else
+      h3.masthead-brand: a(href='/')= name
+    - if (showNav)
+      nav
+        ul.nav.masthead-nav
+          -
+          if (active == 'create')
+              li.active: a(href='/create') Create
+          else
+              li: a(href='/create') Create
+          if (active == 'orders')
+            li.active: a(href='/orders') Orders
+          else
+            li: a(href='/orders') Orders
