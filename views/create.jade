@@ -1,0 +1,32 @@
+﻿extends layout
+
+include ./mixins/masthead.jade
+include ./mixins/mastfoot.jade
+include ./mixins/orderform.jade
+
+
+block content
+  +masthead(title, true, 'create')
+  div.site-wrapper
+    div.site-wrapper-inner
+      div.cover-container
+        div.inner.cover
+          h1.cover-heading Let's create an order
+          form
+            div#order-place-group.form-group
+              input#order-place.form-control(type='text', placeholder='Place')
+            div#order-time-group.input-group
+              input#order-time.form-control(type='number', placeholder='Time', aria-label='...')
+              div.input-group-btn
+                button#dropdown-btn.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Minutes
+                  span.caret
+                ul.dropdown-menu.dropdown-menu-right
+                  li: a#dropdown-minutes Minutes
+                  li: a#dropdown-hours Hours
+            p.lead
+              input#order-btn.btn.btn-lg.btn-default(type='submit', value='Create')
+  +mastfoot
+
+block scripts
+    script(src='/javascripts/create.js')
+    

@@ -1,0 +1,18 @@
+﻿extends layout
+
+include ./mixins/masthead.jade
+include ./mixins/mastfoot.jade
+
+
+block content
+  +masthead(title, true, 'index')
+  div.site-wrapper
+    div.site-wrapper-inner
+      div.cover-container
+        div.inner.cover
+          - var last = Math.abs(time / (60 * 60 * 1000));
+          - var lastRound = Math.round(last * 100) / 100;
+
+          h1.cover-heading Order expired! :*(
+          p.lead The last order was placed #{lastRound} hours ago.
+  +mastfoot

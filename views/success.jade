@@ -1,0 +1,15 @@
+extends layout
+
+include ./mixins/masthead.jade
+include ./mixins/mastfoot.jade
+
+
+block content
+  +masthead(title, false, 'index')
+  div.site-wrapper
+    div.site-wrapper-inner
+      div.cover-container
+        div.inner.cover
+          h1.cover-heading :-)
+  +mastfoot
+  

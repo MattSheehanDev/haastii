@@ -1,0 +1,41 @@
+﻿doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='author', content='M Sheehan')
+
+
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    block content
+
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+
+    block scripts
+
+    
+    script.
+      var bgColors = ['#e67e22', '#27ae60', '#1abc9c', '#9b59b6', '#2ecc71'];
+
+      var colorIndex = Math.floor(Math.random() * bgColors.length);
+      console.log(colorIndex);
+      var color = bgColors[colorIndex];
+      
+      $(document).ready(function() {
+        //document.body.style.backgroundColor = color;
+
+        var st = document.createElement('style');
+        document.head.appendChild(st);
+        
+        st.innerHTML = 'html body { background-color: ' + color + '}';
+        st.innerHTML += '::-moz-selection { text-shadow: none; background: #fff; color: ' + color + '}';
+        st.innerHTML += '::selection { text-shadow: none; background: #fff; color: ' + color + '}';
+
+        $(document.body).show();
+      });
+      

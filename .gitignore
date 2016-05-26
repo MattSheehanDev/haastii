@@ -1,0 +1,13 @@
+
+### Emacs ###
+*.*~
+*~
+[#]*[#]
+.\#*
+.[#]*
+
+
+### Application ###
+node_modules/**/*
+**/*.map
+put-haastii
