@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "haastii",
   "private": true,
+  "engines": {
+	  "node": "6.2.0"
+  }
   "scripts": {
     "start": "node app.js"
   },
