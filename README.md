@@ -17,7 +17,6 @@ npm install less -g
 3. From the project directory install the npm modules, run gulp, and start the project
 ```
 npm install
-gulp
 npm start
 ```
 
