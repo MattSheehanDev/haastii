@@ -117,10 +117,6 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
-# 4. Compile ts
-echo Running gulp.
-eval npm install -g -y gulp-cli
-eval gulp
 
 ##################################################################################################################################
 
