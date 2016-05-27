@@ -119,7 +119,7 @@ fi
 
 # 4. Compile ts
 echo Running gulp.
-eval npm install -g gulp-cli
+eval npm install -g -y gulp-cli
 eval gulp
 
 ##################################################################################################################################
