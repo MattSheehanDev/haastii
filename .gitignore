@@ -10,4 +10,9 @@
 ### Application ###
 node_modules/**/*
 **/*.map
+app.js
+javascripts/**/*.js
+public/stylesheets/**/*.css
+public/javascripts/**/*.js
+routes/**/*.js
 put-haastii

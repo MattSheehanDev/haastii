@@ -7,6 +7,7 @@
 	  "node": "6.1.0"
   },
   "scripts": {
+		"prestart": "gulp",
     "start": "node app.js"
   },
   "author": {
@@ -25,15 +26,15 @@
     "method-override": "^2.3.0",
     "errorhandler": "1.4.3",
     "jade": "1.11.0",
-    "typescript": "1.8.10"
-  },
-  "devDependencies": {
-    "del": "^2.2.0",
+    "typescript": "1.8.10",
     "gulp": "3.9.1",
     "gulp-less": "3.1.0",
     "gulp-typescript": "~2.13.4",
     "gulp-sourcemaps": "1.6.0",
     "gulp-changed": "~1.3.0",
-    "gulp-watch": "~4.3.5"
+    "gulp-watch": "~4.3.5",
+    "del": "^2.2.0"
+  },
+  "devDependencies": {
   }
 }
