@@ -7,7 +7,7 @@
 	  "node": "6.1.0"
   },
   "scripts": {
-		"prestart": "gulp",
+    "prestart": "gulp",
     "start": "node app.js"
   },
   "author": {

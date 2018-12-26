@@ -10,6 +10,11 @@
 ### Application ###
 node_modules/**/*
 **/*.map
-put-haastii
 **/.DS_Store
 
+app.js
+javascripts/**/*.js
+public/stylesheets/**/*.css
+public/javascripts/**/*.js
+routes/**/*.js
+put-haastii
