@@ -11,3 +11,5 @@
 node_modules/**/*
 **/*.map
 put-haastii
+**/.DS_Store
+
