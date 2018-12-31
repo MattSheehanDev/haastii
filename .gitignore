@@ -18,3 +18,5 @@ public/stylesheets/**/*.css
 public/javascripts/**/*.js
 routes/**/*.js
 put-haastii
+deploy.sh
+

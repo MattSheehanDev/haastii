@@ -1,30 +1,16 @@
 ﻿# haastii
 
-### Building haastii ###
+__This project is deprecated and no longer supported__
 
-1. Install `gulp-cli` globally
-   * First remove any old `gulp` packages you have installed
-   ```
-   npm rm gulp -g
-   ```
-```
-npm install gulp-cli -g
-```
-2. Install `less` globally
-```
-npm install less -g
-```
-3. From the project directory install the npm modules, run gulp, and start the project
-```
+#### Building
+
+```sh
 npm install
-gulp
-npm start
+npm run build       # initial build
+npm start           # start dev server
 ```
 
-### Deploying haastii ###
+Visit [http://localhost:3000](http://localhost:3000) to see it in action.
+The build output is located in the `./public` directory.
 
-1. Make sure you've built the project first
-
-2. Use the `put-haastii` script to push to the server
-   1. Make sure you have directory permissions
 
