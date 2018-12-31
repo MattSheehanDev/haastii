@@ -11,6 +11,5 @@ npm start           # start dev server
 ```
 
 Visit [http://localhost:3000](http://localhost:3000) to see it in action.
-The build output is located in the `./public` directory.
 
 
